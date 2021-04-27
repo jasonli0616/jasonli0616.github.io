@@ -35,6 +35,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
 
@@ -44,23 +48,95 @@
     </nav>
 
     <!-- Main intro section -->
-    <section class="py-5 text-center container">
         <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="text-white">Jason Li</h1>
-                <p class="lead text-light">
-                    This is just some random placeholder text. No one is gonna read this anyways. I can make it repeat if I want to. This is just some random placeholder text. No one is gonna read this anyways.
-                </p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Placeholder button</a>
-                    <a href="#" class="btn btn-secondary my-2">Nothing happens when you click me</a>
-                </p>
+            <div class="container">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="text-white">Jason Li</h1>
+                    <p class="lead text-light">
+                        This website is still under development. Buttons may not work and pages may not be available.
+                    </p>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">Placeholder button</a>
+                        <a href="#" class="btn btn-secondary my-2">Placeholder button</a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Projects/cards section -->
+    <div class="album py-5 bg-dark" id="projects">
+        <div class="container">
+            <h1 class="display-5 text-white">
+                Projects
+            </h1>
+            <br>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <!-- PyInstaller GUI -->
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="files/pyinstallergui_screenshot.png" alt="" style="max-width: 15rem; max-height: 16rem;">
+            
+                        <div class="card-body">
+                            <h5 class="card-title">PyInstaller GUI</h5>
+                            <p class="card-text">
+                                A simple GUI application for PyInstaller. This GUI uses the <a href="https://www.pyinstaller.org">PyInstaller command line application</a> to turn .py files to .exe programs.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pyinstallergui-github-btn">View on GitHub</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BSCode -->
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="files/bscode_screenshot.png" alt="" style="max-height: 16rem;">
+            
+                        <div class="card-body">
+                            <h5 class="card-title">BSCode</h5>
+                            <p class="card-text">
+                                This is a text editor I made that can natively run Python, Node.js, and Swift.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="bscode-github-btn">View on GitHub</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PyShell Discord Bot -->
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="files/pyshellbot_img.png" alt="" style="max-height: 12rem; max-width: 12rem; padding: 10px;">
+            
+                        <div class="card-body">
+                            <h5 class="card-title">PyShell Discord Bot</h5>
+                            <p class="card-text">
+                                Discord bot that can run Python code in a Discord channel.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pyshellbot-github-btn">View on GitHub</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
     
 
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
 </html>
