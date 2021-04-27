@@ -13,7 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#about-me p {
+#about-me .lead {
     color: rgb(219, 219, 219);
 }
 
