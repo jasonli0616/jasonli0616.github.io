@@ -3,9 +3,6 @@ Jason Li's Portfolio Website
 made by: Jason Li
 */
 
-
-
-
 // Open GitHub on click
 function viewOnGitHub(repo) {
     if (repo == "pyinstallergui") {
