@@ -5,6 +5,7 @@ made by: Jason Li
 
 
 
+
 // Open GitHub on click
 function viewOnGitHub(repo) {
     if (repo == "pyinstallergui") {
@@ -19,5 +20,5 @@ function viewOnGitHub(repo) {
 // Button scrolls down to section
 function scrollToSection(sectionid) {
     let scrollto_section = document.getElementById(sectionid);
-    scrollto_section.scrollIntoView();
+    scrollto_section.scrollIntoView({ behavior: 'smooth' });
 }
