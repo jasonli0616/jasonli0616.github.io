@@ -75,15 +75,19 @@ made by: Jason Li
         <div class="py-5">
             <div class="container">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="text-light">Jason Li</h1>
-                    <p class="lead text-light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <img src="files/jl_logo.png" alt="" style="max-width: 19rem;">
+                    
+                    <h1 class="display-1 text-light">Jason Li</h1>
+                    <h5 class="display-5 text-light">Aspiring smart person</h3>
+                    <p class="lead text-light" id="intro-text">
+                        I am a high school student in Canada interested in programming with experience in Python, HTML, and CSS. To see my projects or to learn more about me, click the buttons below.
                     </p>
                     <p>
-                        <button class="btn btn-primary" onclick="scrollToSection('projects')">Projects</button>
+                        <button class="btn btn-outline-info" onclick="scrollToSection('projects')">Projects</button>
                         <button class="btn btn-outline-light" onclick="scrollToSection('about-me')">About me</button>
                         <button class="btn btn-outline-light" onclick="scrollToSection('contact')">Contact</button>
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,7 +96,7 @@ made by: Jason Li
     <!-- Projects/cards section -->
     <div class="py-5 bg-dark" id="projects">
         <div class="container">
-            <h1 class="display-5 text-white">
+            <h1 class="display-4 text-white">
                 Projects
             </h1>
             <br>
@@ -163,66 +167,82 @@ made by: Jason Li
     </div>
 
 
+    <!-- More Info -->
 
-    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="pyinstallergui-moreinfo" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">PyInstaller GUI</h5>
-            <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <p class="text-white">PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" class="link-info">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.</p>
+        <!-- PyInstaller GUI -->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="pyinstallergui-moreinfo" aria-labelledby="pyinstallergui-moreinfo">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">PyInstaller GUI</h5>
+                <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="text-white">PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" class="link-info">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.</p>
+                </div>
+                <br>
+                <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyinstallergui')">View on GitHub</button>
+            </div>
+        </div>
+
+        <!-- BSCode -->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="bscode-moreinfo" aria-labelledby="bscode-moreinfo">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">BSCode</h5>
+                <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="text-white">BSCode, named derived from but not related to Microsoft's Visual Studio Code (VSCode), is a lightweight text editor for code. Able to edit any language, it can also natively run Python, Node.js, and Swift; and display HTML.</p>
+                </div>
             <br>
-            <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyinstallergui')">View on GitHub</button>
-        </div>
-    </div>
-
-    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="bscode-moreinfo" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">BSCode</h5>
-            <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <p class="text-white">BSCode, named derived from but not related to Microsoft's Visual Studio Code (VSCode), is a lightweight text editor for code. Able to edit any language, it can also natively run Python, Node.js, and Swift; and display HTML.</p>
+            <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('bscode')">View on GitHub</button>
             </div>
-        <br>
-        <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('bscode')">View on GitHub</button>
         </div>
-    </div>
 
-    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="pyshellbot-moreinfo" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">PyShell Discord Bot</h5>
-            <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <p class="text-white">The PyShell Discord Bot opens a Python shell right in your Discord server. Name a server "#pyshell", and start typing Python code.</p>
+        <!-- PyShell Discord Bot -->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="pyshellbot-moreinfo" aria-labelledby="pyshellbot-moreinfo">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">PyShell Discord Bot</h5>
+                <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <br>
-            <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyshellbot')">View on GitHub</button>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="text-white">The PyShell Discord Bot opens a Python shell right in your Discord server. Name a server "#pyshell", and start typing Python code.</p>
+                </div>
+                <br>
+                <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyshellbot')">View on GitHub</button>
+            </div>
         </div>
-    </div>
 
 
 
     <!-- About section -->
     <div class="py-5" id="about-me">
         <div class="container">
-                <h1 class="display-5 text-white">About me</h1>
-                <br>
-                <p>
-                    Placeholder text<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+            <h1 class="display-4 text-white">About me</h1>
+            <br>
+            <p class="lead">
+                I am a high school student in Canada with an interest for programming. I have experience in Python, HTML, and CSS, with limited knowledge in JavaScript and Swift. I have participated in the CanHack hackathon, earning a <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank" class="link-info">Cybersecurity quiz pass and completion badge</a>.
+            </p>
+
+            <h2 class="display-6 text-white">Education</h2>
+                <ul class="lead">
+                    <li>Garth Webb Secondary School - Ontario, Canada <b>(2020-present)</b></li>
+                    <li>Emily Carr Public School - Ontario, Canada <b>(2014-2020)</b></li>
+                </ul>
+
+            <h2 class="display-6 text-white">Extracurriculars</h2>
+                <ul class="lead">
+                    <li>Garth Webb Programming Club <b>(2020-present)</b></li>
+                    <li>Emily Carr Symphonic Winds <b>(2018-2020)</b></li>
+                </ul>
         </div>
     </div>
 
     <!-- Contact section -->
     <div class="py-5 bg-dark" id="contact">
         <div class="container">
-                <h1 class="display-5 text-white">Contact</h1>
+                <h1 class="display-4 text-white">Contact</h1>
                 <p class="lead">
 
                     <!-- Email -->
