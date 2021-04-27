@@ -16,7 +16,7 @@ made by: Jason Li
     <link rel="shortcut icon" href="files/jl_logo.png" type="image/x-icon">
     <title>Jason Li</title>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -46,7 +46,11 @@ made by: Jason Li
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('about-me')">About me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('contact')">Contact</a>
                     </li>
 
                 </ul>
@@ -58,22 +62,21 @@ made by: Jason Li
         <div class="row py-lg-5">
             <div class="container">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="text-white">Jason Li</h1>
+                    <h1 class="text-light">Jason Li</h1>
                     <p class="lead text-light">
                         This website is still under development. Buttons may not work and pages may not be available.
                     </p>
                     <p>
-                        <button class="btn btn-primary my-2" onclick="scrollToSection('projects')">Projects</button>
-                        <a href="#" class="btn btn-secondary my-2">Placeholder button</a>
+                        <button class="btn btn-primary" onclick="scrollToSection('projects')">Projects</button>
+                        <button class="btn btn-light" onclick="scrollToSection('about-me')">About me</button>
                     </p>
                 </div>
             </div>
         </div>
-    </section>
 
 
     <!-- Projects/cards section -->
-    <div class="album py-5 bg-dark" id="projects">
+    <div class="py-5 bg-dark" id="projects">
         <div class="container">
             <h1 class="display-5 text-white">
                 Projects
@@ -93,7 +96,8 @@ made by: Jason Li
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-light" id="pyinstallergui-github-btn">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" onclick="viewOnGitHub('pyinstallergui')">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#pyinstallergui-moreinfo" aria-controls="pyinstallergui-moreinfo">More info</button>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +116,8 @@ made by: Jason Li
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-light" id="bscode-github-btn">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" onclick="viewOnGitHub('bscode')">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#bscode-moreinfo" aria-controls="bscode-moreinfo">More info</button>
                                 </div>
                             </div>
                         </div>
@@ -131,15 +136,86 @@ made by: Jason Li
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-light" id="pyshellbot-github-btn">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" onclick="viewOnGitHub('pyshellbot')">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#pyshellbot-moreinfo" aria-controls="pyshellbot-moreinfo">More info</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
         </div>
     </div>
+
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="pyinstallergui-moreinfo" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">PyInstaller GUI</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" class="link-primary">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.
+            </div>
+            <br>
+            <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyinstallergui')">View on GitHub</button>
+          </div>
+      </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="bscode-moreinfo" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">BSCode</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+                BSCode, named derived from but not related to Microsoft's Visual Studio Code (VSCode), is a lightweight text editor for code. Able to edit any language, it can also natively run Python, Node.js, and Swift; and display HTML.
+          </div>
+          <br>
+          <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('bscode')">View on GitHub</button>
+        </div>
+      </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="pyshellbot-moreinfo" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">PyShell Discord Bot</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+                The PyShell Discord Bot opens a Python shell right in your Discord server. Name a server "#pyshell", and start typing Python code.
+          </div>
+          <br>
+          <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyshellbot')">View on GitHub</button>
+        </div>
+      </div>
+
+
+
+    <!-- About section -->
+    <div class="py-5" id="about-me">
+        <div class="container">
+                <h1 class="display-5 text-white">About me</h1>
+                <br>
+                <p>
+                    Placeholder text<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="py-5 bg-dark" id="contact">
+        <div class="container">
+                <h1 class="display-5 text-white">Contact</h1>
+                <br>
+                <p class="lead">
+                    Placeholder text<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+        </div>
+    </div>
+
 
     
 

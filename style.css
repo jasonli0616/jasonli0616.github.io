@@ -6,10 +6,19 @@ made by: Jason Li
 
 
 body {
+    width: 100%;
+    overflow-x: hidden;
     background-color: rgb(92, 92, 92);
-    scroll-behavior: smooth;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+#about-me p {
+    color: rgb(219, 219, 219);
+}
+
+#contact p {
+    color: rgb(219, 219, 219);
 }
