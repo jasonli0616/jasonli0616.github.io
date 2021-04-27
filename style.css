@@ -1,8 +1,15 @@
+/*
+Jason Li's Portfolio Website
+made by: Jason Li
+*/
+
+
+
 body {
     background-color: rgb(92, 92, 92);
+    scroll-behavior: smooth;
 }
 
 html {
     scroll-behavior: smooth;
 }
-

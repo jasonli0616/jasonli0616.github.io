@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<!--
+Jason Li's Portfolio Website
+made by: Jason Li
+-->
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +42,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('projects')">Projects</a>
                     </li>
 
                     <li class="nav-item">
@@ -56,7 +63,7 @@
                         This website is still under development. Buttons may not work and pages may not be available.
                     </p>
                     <p>
-                        <a href="#" class="btn btn-primary my-2">Placeholder button</a>
+                        <button class="btn btn-primary my-2" onclick="scrollToSection('projects')">Projects</button>
                         <a href="#" class="btn btn-secondary my-2">Placeholder button</a>
                     </p>
                 </div>
@@ -76,17 +83,17 @@
 
                 <!-- PyInstaller GUI -->
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card text-white bg-secondary mb-3">
                         <img src="files/pyinstallergui_screenshot.png" alt="" style="max-width: 15rem; max-height: 16rem;">
             
                         <div class="card-body">
                             <h5 class="card-title">PyInstaller GUI</h5>
                             <p class="card-text">
-                                A simple GUI application for PyInstaller. This GUI uses the <a href="https://www.pyinstaller.org">PyInstaller command line application</a> to turn .py files to .exe programs.
+                                A simple GUI application for PyInstaller. This GUI uses the <a href="https://www.pyinstaller.org" class="link-info">PyInstaller command line application</a> to turn .py files to .exe programs.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pyinstallergui-github-btn">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" id="pyinstallergui-github-btn">View on GitHub</button>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +102,7 @@
 
                 <!-- BSCode -->
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card text-white bg-secondary mb-3">
                         <img src="files/bscode_screenshot.png" alt="" style="max-height: 16rem;">
             
                         <div class="card-body">
@@ -105,7 +112,7 @@
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="bscode-github-btn">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" id="bscode-github-btn">View on GitHub</button>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +121,7 @@
 
                 <!-- PyShell Discord Bot -->
                 <div class="col">
-                    <div class="card shadow-sm">
+                    <div class="card text-white bg-secondary mb-3">
                         <img src="files/pyshellbot_img.png" alt="" style="max-height: 12rem; max-width: 12rem; padding: 10px;">
             
                         <div class="card-body">
@@ -124,7 +131,7 @@
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" id="pyshellbot-github-btn">View on GitHub</button>
+                                    <button type="button" class="btn btn-sm btn-outline-light" id="pyshellbot-github-btn">View on GitHub</button>
                                 </div>
                             </div>
                         </div>
