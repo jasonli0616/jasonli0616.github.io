@@ -16,16 +16,17 @@ made by: Jason Li
     <script src="https://kit.fontawesome.com/7435d12b1d.js" crossorigin="anonymous"></script>
     <title>Jason Li</title>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100" id="home">
 
     <!-- Nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
         <div class="container-fluid">
 
             <!-- Logo + Title -->
-            <a class="navbar-brand" href="#">
-                <img src="files/jl_logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
-                Jason Li
+            <a class="navbar-brand" onclick="scrollToSection('home')" style="cursor: pointer;">
+                <img src="files/jl_logo.png" alt="" width="30" height="30" class="d-inline-block align-text-bottom">
+                <span style="font-size: 30px;">Jason Li</span>
             </a>
 
             <!-- Nav toggle button (mobile) -->
@@ -38,7 +39,7 @@ made by: Jason Li
                 <ul class="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('home')">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -57,6 +58,7 @@ made by: Jason Li
             </div>
         </div>
     </nav>
+    </div>
 
     <!-- No JavaScript Alert -->
     <div class="container">
@@ -241,6 +243,9 @@ made by: Jason Li
         <div class="container">
                 <h1 class="display-4 text-white">Contact</h1>
                 <p class="lead">
+
+                    <span style="font-size: 30px; font-weight: 500;" class=text-light>Jason Li</span>
+                    <br>
 
                     <!-- Email -->
                     <a href="mailto:jasonli.0616@outlook.com" class="link-light" style="text-decoration: none;">

@@ -18,4 +18,85 @@ function viewOnGitHub(repo) {
 function scrollToSection(sectionid) {
     let scrollto_section = document.getElementById(sectionid);
     scrollto_section.scrollIntoView({ behavior: 'smooth' });
+    if (sectionid == "home") {
+        document.getElementById("navbarNav").innerHTML = `
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('home')">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('projects')">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('about-me')">About me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('contact')">Contact</a>
+                </li>
+            </ul>
+        `;
+    } else if (sectionid == "projects") {
+        document.getElementById("navbarNav").innerHTML = `
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('home')">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('projects')">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('about-me')">About me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('contact')">Contact</a>
+                </li>
+            </ul>
+        `;
+    } else if (sectionid == "about-me") {
+        document.getElementById("navbarNav").innerHTML = `
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('home')">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('projects')">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('about-me')">About me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('contact')">Contact</a>
+                </li>
+            </ul>
+        `;
+    } else if (sectionid == "contact") {
+        document.getElementById("navbarNav").innerHTML = `
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('home')">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('projects')">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('about-me')">About me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('contact')">Contact</a>
+                </li>
+            </ul>
+        `;
+    }
 }
