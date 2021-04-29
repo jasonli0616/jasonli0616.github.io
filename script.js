@@ -3,6 +3,37 @@ Jason Li's Portfolio Website
 made by: Jason Li
 */
 
+// Adjust intro for screen size
+let screen_width = screen.availWidth
+let intro_section = document.getElementById("intro-section")
+if (screen_width <= 1005) {
+    intro_section.innerHTML = `
+        <div class="py-5" id="intro_section">
+            <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <img src="files/jl_logo.png" alt="" style="max-width: 18rem;">
+                        </div>
+                        <div class="col">
+                            <h1 class="display-1 text-light">Jason Li</h1>
+                            <h5 class="display-5 text-light">Aspiring smart person</h3>
+                            <p class="lead text-light" id="intro-text">
+                                I am a high school student in Canada interested in programming with experience in Python, HTML, and CSS. To see my projects or to learn more about me, click the buttons below.
+                            </p>
+                            <p>
+                                <button class="btn btn-outline-info" onclick="scrollToSection('projects')">Projects</button>
+                                <button class="btn btn-outline-light" onclick="scrollToSection('about-me')">About me</button>
+                                <button class="btn btn-outline-light" onclick="scrollToSection('contact')">Contact</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+}
+
+
 // Open GitHub on click
 function viewOnGitHub(repo) {
     if (repo == "pyinstallergui") {
