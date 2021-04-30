@@ -89,7 +89,7 @@ window.addEventListener('resize', function(event) {
 // Open GitHub on click
 function viewOnGitHub(repo) {
     if (repo == "pyinstallergui") {
-        window.open("https://github.com/HDSB-GWS-ProgrammingClub/PyInstaller-GUI", "_blank");
+        window.open("https://github.com/jasonli0616/PyInstaller-GUI", "_blank");
     } else if (repo == "bscode") {
         window.open("https://github.com/jasonli0616/BSCode", "_blank");
     } else if (repo == "pyshellbot") {
