@@ -16,7 +16,17 @@ made by: Jason Li
     <script src="https://kit.fontawesome.com/7435d12b1d.js" crossorigin="anonymous"></script>
     <title>Jason Li</title>
 </head>
+
 <body class="d-flex flex-column h-100" id="home">
+
+
+
+    <!-- Redirect if no JS-->
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=noscript.html">
+    </noscript>
+
+
 
     <!-- Nav bar -->
     <div class="sticky-top">
@@ -60,40 +70,32 @@ made by: Jason Li
     </nav>
     </div>
 
-    <!-- No JavaScript Alert -->
-    <div class="container">
-        
-        <noscript><br>
-            <div class="alert alert-danger">
-            <h4 class="alert-heading">JavaScript disabled.</h4>
-            <hr>Some features of this website may be unavailable without JavaScript. <a href="https://enable-javascript.com" target="_blank" class="alert-link">Click here to learn more.</a>
-        </div></noscript>
-    </div>
+
 
     <!-- Main intro section -->
-        <div class="py-5" id="intro-section">
-            <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <img src="files/jl_logo.png" alt="" style="max-width: 18rem;">
-                        </div>
-                        <div class="col-5">
-                            <h1 class="display-1 text-light">Jason Li</h1>
-                            <h5 class="display-5 text-light">Aspiring smart person</h3>
-                            <p class="lead text-light" id="intro-text">
-                                I am a high school student in Canada interested in programming with experience in Python, HTML, and CSS. To see my projects or to learn more about me, click the buttons below.
-                            </p>
-                            <p>
-                                <button class="btn btn-outline-info" onclick="scrollToSection('projects')">Projects</button>
-                                <button class="btn btn-outline-light" onclick="scrollToSection('about-me')">About me</button>
-                                <button class="btn btn-outline-light" onclick="scrollToSection('contact')">Contact</button>
-                            </p>
-                        </div>
+    <div class="py-5" id="intro-section">
+        <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="files/jl_logo.png" alt="" style="max-width: 18rem;">
+                    </div>
+                    <div class="col-5">
+                        <h1 class="display-1 text-light">Jason Li</h1>
+                        <h5 class="display-5 text-light">Aspiring smart person</h3>
+                        <p class="lead text-light" id="intro-text">
+                            I am a high school student in Canada interested in programming with experience in Python, HTML, and CSS. To see my projects or to learn more about me, click the buttons below.
+                        </p>
+                        <p>
+                            <button class="btn btn-outline-info" onclick="scrollToSection('projects')">Projects</button>
+                            <button class="btn btn-outline-light" onclick="scrollToSection('about-me')">About me</button>
+                            <button class="btn btn-outline-light" onclick="scrollToSection('contact')">Contact</button>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        
+    </div>
+
 
 
     <!-- Projects/cards section -->
@@ -113,7 +115,7 @@ made by: Jason Li
                         <div class="card-body">
                             <h5 class="card-title">PyInstaller GUI</h5>
                             <p class="card-text">
-                                A simple GUI application for PyInstaller. This GUI uses the <a href="https://www.pyinstaller.org" class="link-info">PyInstaller command line application</a> to turn .py files to .exe programs.
+                                A simple GUI application for PyInstaller. This GUI uses the <a href="https://www.pyinstaller.org" target="_blank" class="link-info">PyInstaller command line application</a> to turn .py files to .exe programs.
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
@@ -170,6 +172,7 @@ made by: Jason Li
     </div>
 
 
+
     <!-- More Info -->
 
         <!-- PyInstaller GUI -->
@@ -180,7 +183,7 @@ made by: Jason Li
             </div>
             <div class="offcanvas-body">
                 <div>
-                    <p class="text-white">PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" class="link-info">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.</p>
+                    <p class="text-white">PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" target="_blank" class="link-info">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.</p>
                 </div>
                 <br>
                 <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyinstallergui')">View on GitHub</button>
@@ -242,22 +245,24 @@ made by: Jason Li
 
             <h2 class="display-6 text-white">Languages & Skills</h2>
                 <ul class="lead" style="line-height: 2.5rem;">
-                    <li>Python 3 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="far fa-star"></i></i></li>
+                    <li>Python 3 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li>
                     <ul>
-                        <li>Requests + BS4 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="far fa-star"></i></i></li>
-                        <li>Tk TTK <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"><i class="far fa-star"></i></i></li>
-                        <li>Flask <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i></li>
+                        <li>Requests + BS4 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li>
+                        <li>Tk TTK <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li>
+                        <li>Flask <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
                     </ul>
-                    <li>HTML <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i></li>
+                    <li>HTML <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
                     <ul>
-                        <li>Bootstrap <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i></li>
+                        <li>Bootstrap <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
                     </ul>
-                    <li>CSS <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i></li>
-                    <li>JS <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i></li>
-                    <li>SwiftUI <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"><i class="far fa-star"></i></i></li>
+                    <li>CSS <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
+                    <li>JS <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
+                    <li>SwiftUI <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
                 </ul>
         </div>
     </div>
+
+
 
     <!-- Contact section -->
     <div class="py-5 bg-dark" id="contact">
@@ -305,7 +310,6 @@ made by: Jason Li
     </div>
 
 
-    
 
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script src="script.js"></script>
