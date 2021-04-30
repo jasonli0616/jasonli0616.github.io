@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<!--
+Jason Li's Portfolio Website
+No JavaScript version
+made by: Jason Li
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="files/jl_logo.png" type="image/x-icon">
+    <title>Jason Li</title>
+</head>
+
+<body class="d-flex flex-column h-100" id="home">
+
+
+
+    <!-- Nav bar -->
+    <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+        <div class="container-fluid">
+
+            <!-- Logo + Title -->
+            <a href="/" class="navbar-brand" style="cursor: pointer;">
+                <img src="files/jl_logo.png" alt="" width="30" height="30" class="d-inline-block align-text-bottom">
+                <span style="font-size: 30px;">Jason Li</span>
+            </a>
+
+            <!-- Nav toggle button (mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Pages -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" style="cursor: pointer;" aria-current="page"">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" style="cursor: pointer;" >Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link" style="cursor: pointer;">About me</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" style="cursor: pointer;">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+
+
+    <!-- Main intro section -->
+    <div class="py-5" id="intro-section">
+        <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="files/jl_logo.png" alt="" style="max-width: 18rem;">
+                    </div>
+                    <div class="col-5">
+                        <h1 class="display-1 text-light">Jason Li</h1>
+                        <h5 class="display-5 text-light">Aspiring smart person</h3>
+                        <p class="lead text-light" id="intro-text">
+                            I am a high school student in Canada interested in programming with experience in Python, HTML, and CSS. To see my projects or to learn more about me, click the buttons below.
+                        </p>
+                        <p>
+                            <a href="#projects" class="btn btn-outline-info">Projects</a>
+                            <a href="#about-me" class="btn btn-outline-light">About me</a>
+                            <a href="#contact" class="btn btn-outline-light">Contact</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+
+    <!-- Projects/cards section -->
+    <div class="py-5 bg-dark" id="projects">
+        <div class="container">
+            <h1 class="display-4 text-white">
+                Projects
+            </h1>
+            <br>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                <!-- PyInstaller GUI -->
+                <div class="col">
+                    <div class="card text-white bg-secondary mb-3">
+                        <img src="files/pyinstallergui_screenshot.png" alt="" style="max-width: 15rem; max-height: 16rem;">
+            
+                        <div class="card-body">
+                            <h5 class="card-title">PyInstaller GUI</h5>
+                            <p class="card-text">
+                                A simple GUI application for PyInstaller. This GUI uses the <a href="https://www.pyinstaller.org" target="_blank" class="link-info">PyInstaller command line application</a> to turn .py files to .exe programs.
+                            </p>
+                            <strong>More info:</strong>
+                            <p class="text-white">PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" target="_blank" class="link-info">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://github.com/HDSB-GWS-ProgrammingClub/PyInstaller-GUI" class="btn btn-sm btn-outline-light" target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BSCode -->
+                <div class="col">
+                    <div class="card text-white bg-secondary mb-3">
+                        <img src="files/bscode_screenshot.png" alt="" style="max-height: 16rem;">
+            
+                        <div class="card-body">
+                            <h5 class="card-title">BSCode</h5>
+                            <p class="card-text">
+                                This is a text editor I made that can natively run Python, Node.js, and Swift.
+                            </p>
+                            <strong>More info:</strong>
+                            <p class="text-white">BSCode, named derived from but not related to Microsoft's Visual Studio Code (VSCode), is a lightweight text editor for code. Able to edit any language, it can also natively run Python, Node.js, and Swift; and display HTML.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://github.com/jasonli0616/BSCode" class="btn btn-sm btn-outline-light" target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PyShell Discord Bot -->
+                <div class="col">
+                    <div class="card text-white bg-secondary mb-3">
+                        <img src="files/pyshellbot_img.png" alt="" style="max-height: 12rem; max-width: 12rem; padding: 10px;">
+            
+                        <div class="card-body">
+                            <h5 class="card-title">PyShell Discord Bot</h5>
+                            <p class="card-text">
+                                Discord bot that can run Python code in a Discord channel.
+                            </p>
+                            <strong>More info:</strong>
+                            <p class="text-white">The PyShell Discord Bot opens a Python shell right in your Discord server. Name a server "#pyshell", and start typing Python code.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://github.com/jasonli0616/PyShell-Discord-Bot" class="btn btn-sm btn-outline-light" target="_blank">View on GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- More Info -->
+
+        <!-- PyInstaller GUI -->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="pyinstallergui-moreinfo" aria-labelledby="pyinstallergui-moreinfo">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">PyInstaller GUI</h5>
+                <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="text-white">PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" target="_blank" class="link-info">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.</p>
+                </div>
+                <br>
+                <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyinstallergui')">View on GitHub</button>
+            </div>
+        </div>
+
+        <!-- BSCode -->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="bscode-moreinfo" aria-labelledby="bscode-moreinfo">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">BSCode</h5>
+                <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="text-white">BSCode, named derived from but not related to Microsoft's Visual Studio Code (VSCode), is a lightweight text editor for code. Able to edit any language, it can also natively run Python, Node.js, and Swift; and display HTML.</p>
+                </div>
+            <br>
+            <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('bscode')">View on GitHub</button>
+            </div>
+        </div>
+
+        <!-- PyShell Discord Bot -->
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="pyshellbot-moreinfo" aria-labelledby="pyshellbot-moreinfo">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">PyShell Discord Bot</h5>
+                <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <p class="text-white">The PyShell Discord Bot opens a Python shell right in your Discord server. Name a server "#pyshell", and start typing Python code.</p>
+                </div>
+                <br>
+                <button type="button" class="btn btn-secondary" onclick="viewOnGitHub('pyshellbot')">View on GitHub</button>
+            </div>
+        </div>
+
+
+
+    <!-- About section -->
+    <div class="py-5" id="about-me">
+        <div class="container">
+            <h1 class="display-4 text-white">About me</h1>
+            <br>
+            <p class="lead">
+                I am a high school student in Canada with an interest for programming. I have experience in Python, HTML, and CSS, with limited knowledge in JavaScript and Swift. I have participated in the CanHack hackathon, earning a <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank" class="link-info">Cybersecurity quiz pass and completion badge</a>.
+            </p>
+
+            <h2 class="display-6 text-white">Education</h2>
+                <ul class="lead">
+                    <li>Garth Webb Secondary School - Ontario, Canada <b>(2020-present)</b></li>
+                    <li>Emily Carr Public School - Ontario, Canada <b>(2014-2020)</b></li>
+                </ul>
+
+            <h2 class="display-6 text-white">Extracurriculars</h2>
+                <ul class="lead">
+                    <li>Garth Webb Programming Club <b>(2020-present)</b></li>
+                    <li>Emily Carr Symphonic Winds <b>(2018-2020)</b></li>
+                </ul>
+
+            <h2 class="display-6 text-white">Languages & Skills</h2>
+                <ul class="lead" style="line-height: 2.5rem;">
+                    <li>Python 3 &#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <ul>
+                        <li>Requests + BS4 &#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                        <li>Tk TTK &#9733;&#9733;&#9733;&#9733;&#9734;</li>
+                        <li>Flask &#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    </ul>
+                    <li>HTML &#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <ul>
+                        <li>Bootstrap &#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    </ul>
+                    <li>CSS &#9733;&#9733;&#9733;&#9734;&#9734;</li>
+                    <li>JS &#9733;&#9733;&#9734;&#9734;&#9734;</li>
+                    <li>SwiftUI &#9733;&#9733;&#9734;&#9734;&#9734;</li>
+                </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Contact section -->
+    <div class="py-5 bg-dark" id="contact">
+        <div class="container">
+                <h1 class="display-4 text-white">Contact</h1>
+                <p class="lead">
+
+                    <span style="font-size: 30px; font-weight: 500;" class=text-light>Jason Li</span>
+                    <br>
+
+                    <!-- Email -->
+                    <a href="mailto:jasonli.0616@outlook.com" class="link-light" style="text-decoration: none;">
+                        <strong>Email:</strong> jasonli.0616@outlook.com
+                    </a>
+                    <br>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/jasonli.0616" target="_blank" class="link-light" style="text-decoration: none;">
+                        <strong>Instagram:</strong> @jasonli.0616
+                    </a>
+                    <br>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/jasonli0616" target="_blank" class="link-light" style="text-decoration: none;">
+                        <strong>GitHub:</strong> jasonli0616
+                    </a>
+                    <br>
+
+                </p>  
+        </div>
+    </div>
+
+
+
+</body>
+</html>
