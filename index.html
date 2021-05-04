@@ -21,22 +21,15 @@ made by: Jason Li
 
 
 
-    <!-- Redirect if no JS-->
-    <noscript>
-        <meta http-equiv="refresh" content="0;url=noscript.html">
-    </noscript>
-
-
-
     <!-- Nav bar -->
     <div class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
         <div class="container-fluid">
 
             <!-- Logo + Title -->
-            <a class="navbar-brand" onclick="scrollToSection('home')" style="cursor: pointer;">
+            <a href="#home" class="navbar-brand" style="cursor: pointer;">
                 <img src="files/jl_logo.png" alt="" width="30" height="30" class="d-inline-block align-text-bottom">
-                <span style="font-size: 30px;">Jason Li</span>
+                <span style="font-size: 25px;">Jason Li</span>
             </a>
 
             <!-- Nav toggle button (mobile) -->
@@ -45,23 +38,23 @@ made by: Jason Li
             </button>
 
             <!-- Pages -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav" id="navbar-nav">
 
                     <li class="nav-item">
-                        <a class="nav-link active" style="cursor: pointer;" aria-current="page" onclick="scrollToSection('home')">Home</a>
+                        <a href="#home" class="scroll nav-link">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('projects')">Projects</a>
+                        <a href="#projects" class="scroll nav-link">Projects</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('about-me')">About me</a>
+                        <a href="#about-me" class="scroll nav-link">About me</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" style="cursor: pointer;" onclick="scrollToSection('contact')">Contact</a>
+                        <a href="#contact" class="scroll nav-link">Contact</a>
                     </li>
 
                 </ul>
@@ -71,26 +64,37 @@ made by: Jason Li
     </div>
 
 
+    <noscript>
+        <div class="container">
+            <br>
+            <div class="alert alert-danger">
+                <h4 class="alert-heading">JavaScript Disabled</h1>
+                <hr>
+                JavaScript is disabled on your browser. Parts of this website may not display properly.
+            </div>
+        </div>
+    </noscript>
+
+
 
     <!-- Main intro section -->
     <div class="py-5" id="intro-section">
         <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <img src="files/jl_logo.png" alt="" style="max-width: 18rem;">
-                    </div>
-                    <div class="col-5">
-                        <h1 class="display-1 text-light">Jason Li</h1>
-                        <h5 class="display-5 text-light">Aspiring smart person</h3>
-                        <p class="lead text-light" id="intro-text">
-                            I am a high school student in Canada interested in programming with experience in Python, HTML, and CSS. To see my projects or to learn more about me, click the buttons below.
-                        </p>
-                        <p>
-                            <button class="btn btn-outline-info" onclick="scrollToSection('projects')">Projects</button>
-                            <button class="btn btn-outline-light" onclick="scrollToSection('about-me')">About me</button>
-                            <button class="btn btn-outline-light" onclick="scrollToSection('contact')">Contact</button>
-                        </p>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <img src="files/jl_logo.png" alt="" style="max-width: 18rem;">
+                </div>
+                <div class="col" id="intro-section-txt">
+                    <h1 class="display-1 text-light">Jason Li</h1>
+                    <h5 class="display-5 text-light">Aspiring smart person</h3>
+                    <p class="lead text-light" id="intro-text">
+                        I am a high school student in Canada interested in programming with experience in Python, HTML, and CSS. To see my projects or to learn more about me, click the buttons below.
+                    </p>
+                    <p>
+                        <a href="#projects" class="scroll btn btn-outline-info">Projects</a>
+                        <a href="#about-me" class="scroll btn btn-outline-light">About me</a>
+                        <a href="#contact" class="scroll btn btn-outline-light">Contact</a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -117,10 +121,16 @@ made by: Jason Li
                             <p class="card-text">
                                 A simple GUI application for PyInstaller. This GUI uses the <a href="https://www.pyinstaller.org" target="_blank" class="link-info">PyInstaller command line application</a> to turn .py files to .exe programs.
                             </p>
+
+                            <noscript>
+                                <strong>More info:</strong>
+                                <p class="text-white">PyInstaller GUI is a simple easy-to-use graphic user interface program that uses the <a href="https://www.pyinstaller.org" target="_blank" class="link-info">PyInstaller command line application</a>. Turn your Python programs into executable programs, without the need to use the terminal.</p>
+                            </noscript>
+
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-light" onclick="viewOnGitHub('pyinstallergui')">View on GitHub</button>
-                                    <button type="button" class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#pyinstallergui-moreinfo" aria-controls="pyinstallergui-moreinfo">More info</button>
+                                    <a href="https://github.com/jasonli0616/PyInstaller-GUI" target="_blank" class="btn btn-sm btn-outline-light">View on GitHub</a>
+                                    <a class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" href="#pyinstallergui-moreinfo" role="button" aria-controls="pyinstallergui-moreinfo">More info</a>
                                 </div>
                             </div>
                         </div>
@@ -139,8 +149,8 @@ made by: Jason Li
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-light" onclick="viewOnGitHub('bscode')">View on GitHub</button>
-                                    <button type="button" class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#bscode-moreinfo" aria-controls="bscode-moreinfo">More info</button>
+                                    <a href="https://github.com/jasonli0616/BSCode" target="_blank" class="btn btn-sm btn-outline-light">View on GitHub</a>
+                                    <a class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" href="#bscode-moreinfo" role="button" aria-controls="bscode-moreinfo">More info</a>
                                 </div>
                             </div>
                         </div>
@@ -159,8 +169,8 @@ made by: Jason Li
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-light" onclick="viewOnGitHub('pyshellbot')">View on GitHub</button>
-                                    <button type="button" class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#pyshellbot-moreinfo" aria-controls="pyshellbot-moreinfo">More info</button>
+                                    <a href="https://github.com/jasonli0616/PyShell-Discord-Bot" target="_blank" class="btn btn-sm btn-outline-light">View on GitHub</a>
+                                    <a class="btn btn-sm btn-outline-light" data-bs-toggle="offcanvas" href="#pyshellbot-moreinfo" role="button" aria-controls="pyshellbot-moreinfo">More info</a>
                                 </div>
                             </div>
                         </div>
@@ -244,21 +254,99 @@ made by: Jason Li
                 </ul>
 
             <h2 class="display-6 text-white">Languages & Skills</h2>
-                <ul class="lead" style="line-height: 2.5rem;">
-                    <li>Python 3 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li>
+            <div id="skills">
+                <ul class="lead">
+                    <br style="line-height: 10px;">
+                    <li>
+                        Python 3 
+                        <img src="files/python_icon.png" alt="" style="height: 25px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        <noscript>&#9733;&#9733;&#9733;&#9733;&#9734;</noscript>
+                    </li>
                     <ul>
-                        <li>Requests + BS4 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li>
-                        <li>Tk TTK <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></li>
-                        <li>Flask <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
+                        <li>
+                            Requests + BS4 
+                            <img src="files/web_icon.png" alt="" style="height: 25px;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <noscript>&#9733;&#9733;&#9733;&#9733;&#9734;</noscript>
+                        </li>
+                        <li>
+                            Tk TTK 
+                            <img src="files/tkinter_icon.png" alt="" style="height: 25px;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <noscript>&#9733;&#9733;&#9733;&#9733;&#9734;</noscript>
+                        </li>
+                        <li>
+                            Flask 
+                            <img src="files/flask_icon.png" alt="" style="height: 25px;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <noscript>&#9733;&#9733;&#9733;&#9734;&#9734;</noscript>
+                        </li>
                     </ul>
-                    <li>HTML <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
+                    <br style="line-height: 10px;">
+
+
+                    <li>
+                        HTML 
+                        <img src="files/html_icon.png" alt="" style="height: 25px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        <noscript>&#9733;&#9733;&#9733;&#9734;&#9734;</noscript>
+                    </li>
                     <ul>
-                        <li>Bootstrap <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
+                        <li>
+                            Bootstrap 
+                            <img src="files/bootstrap_icon.png" alt="" style="height: 25px;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <noscript>&#9733;&#9733;&#9733;&#9734;&#9734;</noscript>
+                        </li>
                     </ul>
-                    <li>CSS <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
-                    <li>JS <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
-                    <li>SwiftUI <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></li>
+                    <br style="line-height: 10px;">
+
+
+                    <li>
+                        CSS 
+                        <img src="files/css_icon.png" alt="" style="height: 25px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        <noscript>&#9733;&#9733;&#9733;&#9734;&#9734;</noscript>
+                    </li>
+                    <br style="line-height: 10px;">
+
+
+                    <li>
+                        JS 
+                        <img src="files/js_icon.png" alt="" style="height: 25px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        <noscript>&#9733;&#9733;&#9734;&#9734;&#9734;</noscript>
+                    </li>
+                    <br style="line-height: 10px;">
+                    
+                    
+                    <li>
+                        Node.js 
+                        <img src="files/nodejs_icon.png" alt="" style="height: 25px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        <noscript>&#9733;&#9733;&#9734;&#9734;&#9734;</noscript>
+                    </li>
+                    <ul>
+                        <li>
+                            Electron 
+                            <img src="files/electron_icon.png" alt="" style="height: 25px;">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <noscript>&#9733;&#9733;&#9734;&#9734;&#9734;</noscript>
+                        </li>
+                    </ul>
+                    <br style="line-height: 10px;">
+
+
+                    <li>
+                        SwiftUI 
+                        <img src="files/swift_icon.svg" alt="" style="height: 25px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        <noscript>&#9733;&#9733;&#9734;&#9734;&#9734;</noscript>
+                    </li>
+                    <br style="line-height: 10px;">
                 </ul>
+            </div>
         </div>
     </div>
 
