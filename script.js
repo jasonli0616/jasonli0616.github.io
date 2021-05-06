@@ -74,25 +74,3 @@ function scrollAnchors(e, respond = null) {
         }
     }, 100);
 }
-
-// If using Internet Explorer, add message
-var ua = window.navigator.userAgent;
-var msie = ua.indexOf('MSIE ');
-if (msie > 0) {
-   // IE 10 or older
-        let intro_div = document.getElementById('intro-section-txt')
-        intro_div.innerHTML = `
-            <div class="alert alert-danger">Parts of this website may not display properly with Internet Explorer. Please use <a href="https://www.microsoft.com/en-us/edge" target="_blank">Microsoft Edge</a> or <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>.</div>
-            ${intro_div.innerHTML}
-        `
-}
-var ua = window.navigator.userAgent;
-var trident = ua.indexOf('Trident/');
-if (trident > 0) {
-        // IE 11
-        let intro_div = document.getElementById('intro-section-txt')
-        intro_div.innerHTML = `
-            <div class="alert alert-danger">Parts of this website may not display properly with Internet Explorer. Please use <a href="https://www.microsoft.com/en-us/edge" target="_blank">Microsoft Edge</a> or <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>.</div>
-            ${intro_div.innerHTML}
-        `
-}
