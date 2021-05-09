@@ -20,3 +20,20 @@ html {
 #contact p {
 	color: rgb(219, 219, 219);
 }
+
+#skills img {
+	height: 25px;
+}
+
+#contact a {
+	text-decoration: none;
+}
+
+.contact-icon {
+	font-size: 40px;
+}
+
+#copyright {
+	text-align: center;
+	padding-bottom: 30px;
+}
