@@ -41,4 +41,5 @@ html {
 
 #copyright p {
 	cursor: default;
+	text-decoration: none;
 }
