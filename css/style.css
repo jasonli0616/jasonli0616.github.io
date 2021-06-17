@@ -90,3 +90,7 @@ button:hover,
 	background-color: white;
 	color: rgb(73, 73, 73);
 }
+
+hr {
+	width: 90%;
+}
