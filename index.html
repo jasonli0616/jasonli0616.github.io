@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/projects.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Jason Li</title>
 </head>
@@ -20,8 +21,8 @@
 
         <!-- Buttons -->
         <div style="display: flex; justify-content: center;">
-            <a href="#about" class="btn">About me</a>
-            <a href="./projects.html" class="btn">Projects</a>
+            <a href="#more-section" class="btn">About me</a>
+            <a href="#projects" class="btn">Projects</a>
         </div>
         <br>
         
@@ -34,12 +35,95 @@
         </div>
     </div>
 
-    <div class="about-wrapper" id="about">
+    <div class="about-wrapper" id="more-section">
         <div class="intro-card about">
             <h1>About me</h1>
             <p>
-                I am a high school student in Canada. I use languages such as Python and Node.js (JavaScript). I am currently learning Java and the <a href="https://docs.wpilib.org/en/stable/" target="_blank">WPILib library</a> for <a href="https://en.wikipedia.org/wiki/FIRST_Robotics_Competition" target="_blank">FRC Robotics</a>. I have participated in the <a href="https://dmz.ryerson.ca/canhack/" target="_blank">CanHack hackathon</a>, earning a <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank">Cybersecurity quiz pass and completion badge</a>. Check out my GitHub and featured projects below!
+                I am a high school student in Canada. I use languages such as Python and Node.js (JavaScript). I am currently learning Java and the <a href="https://docs.wpilib.org/en/stable/" target="_blank">WPILib library</a> for <a href="https://en.wikipedia.org/wiki/FIRST_Robotics_Competition" target="_blank">FRC Robotics</a>. I have participated in the <a href="https://dmz.ryerson.ca/canhack/" target="_blank">CanHack hackathon</a>, earning a <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank">Cybersecurity quiz pass and completion badge</a>.
             </p>
+            <h2 style="margin-bottom: 35px;">Languages and Technologies</h2>
+            <ul class="lang-list">
+                <li>
+                    <img src="./files/python_icon.png" alt=""> Python 3
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                </li>
+                <ul>
+                    <li>
+                        <img src="./files/flask_icon.png" alt=""> Flask
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </li>
+                    <li>
+                        <img src="./files/discord_icon.png" alt=""> Discord.py API Wrapper
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </li>
+                    <li>
+                        <img src="./files/web_icon.png" alt=""> Web scraping (Requests, BS4)
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </li>
+                </ul>
+                <li>
+                    <img src="./files/nodejs_icon.png" alt=""> Node.js
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                </li>
+                <ul>
+                    <li>
+                        <img src="./files/electron_icon.png" alt=""> Electron
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </li>
+                </ul>
+                <li>
+                    Web:
+                </li>
+                <ul>
+                    <li>
+                        <img src="./files/html_icon.png" alt=""> HTML
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </li>
+                    <li>
+                        <img src="./files/bootstrap_icon.png" alt=""> Bootstrap
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </li>
+                    <li>
+                        <img src="./files/css_icon.png" alt=""> CSS
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </li>
+                    <li>
+                        <img src="./files/js_icon.png" alt=""> JavaScript
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+        <h1>My Projects</h1>
+        <div class="projects-div">
+            <div class="intro-card projects" id="projects">
+                <h2>
+                    AnonPost
+                </h2>
+                <p>
+                    AnonPost is a concept social media platform based around anonymity. The user can use any username to sign up, and can create as many accounts as they want to remain anonymous.
+                </p>
+                <img src="./files/anonpost_screenshot.png" alt="" style="padding: 15px;">
+                <a href="https://github.com/jasonli0616/anon-post" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="intro-card projects" id="projects">
+                <h2>PyInstaller GUI</h2>
+                <p>
+                    This is a GUI version of the <a href="https://www.pyinstaller.org">PyInstaller command line application</a>.
+                </p>
+                <img src="./files/pyinstallergui_screenshot.png" alt="">
+                <a href="https://github.com/jasonli0616/PyInstaller-GUI" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="intro-card projects" id="projects">
+                <h2>BSCode</h2>
+                <p>
+                    BSCode is a lightweight text editor for code. It can natively run Python, Node.js, and Swift.
+                </p>
+                <img src="./files/bscode_screenshot.png" alt="">
+                <a href="https://github.com/jasonli0616/BSCode" target="_blank" class="btn">View on GitHub</a>
+            </div>
         </div>
     </div>
 

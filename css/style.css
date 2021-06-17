@@ -26,16 +26,19 @@ html {
 	margin-bottom: 50vh;
 }
 
-h1 {
+h1,
+h2,
+h3 {
 	font-weight: 300;
 	text-align: center;
+}
+
+h1 {
 	font-size: 50px;
 	margin: 0;
 }
 
-h2 {
-	font-weight: 300;
-	text-align: center;
+#intro h2 {
 	margin: 10px 0px;
 }
 
@@ -79,6 +82,7 @@ button,
 	cursor: pointer;
 	transition: 0.3s all;
 	margin: 5px;
+	width: fit-content;
 }
 
 button:hover,
