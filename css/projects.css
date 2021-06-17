@@ -1,0 +1,31 @@
+.projects-div {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+	.projects-div {
+		flex-direction: column;
+	}
+}
+
+.projects {
+	max-width: 15vh;
+	padding: 5px;
+	padding: 10px;
+	background-color: rgb(166, 176, 187);
+	border: none;
+	color: black;
+	height: fit-content;
+}
+
+.projects img {
+	max-width: 250px;
+	margin: auto;
+	padding: 0 auto;
+}
+
+.projects a {
+	margin: auto;
+	margin-bottom: 10px;
+}
