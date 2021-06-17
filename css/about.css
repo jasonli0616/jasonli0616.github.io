@@ -1,0 +1,12 @@
+/* About */
+.about {
+	background-color: rgb(252, 208, 98);
+	border: 0;
+	color: black;
+}
+
+.about-wrapper {
+	background-color: rgb(110, 112, 199);
+	padding-top: 10px;
+	padding-bottom: 50vh;
+}
