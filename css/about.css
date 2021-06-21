@@ -29,3 +29,16 @@
 .lang-list i {
 	padding: 1px;
 }
+
+@media screen and (max-width: 500px) {
+	.about p {
+		font-size: 16px;
+	}
+	.lang-list {
+		font-size: 16px;
+		line-height: 3vh;
+	}
+	.lang-list img {
+		width: 20px;
+	}
+}
