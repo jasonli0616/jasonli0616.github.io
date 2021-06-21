@@ -12,7 +12,7 @@ html {
 
 .intro-card {
 	background: rgba(0, 0, 0, 0.6);
-	border-radius: 10px;
+	border-radius: 25px;
 	display: flex;
 	flex-direction: column;
 	width: 70%;
@@ -74,7 +74,7 @@ p {
 
 button,
 .btn {
-	background-color: rgb(73, 73, 73);
+	background-color: rgb(55, 55, 55);
 	color: white;
 	text-decoration: none;
 	padding: 7px 15px;
@@ -88,7 +88,7 @@ button,
 button:hover,
 .btn:hover {
 	background-color: white;
-	color: rgb(73, 73, 73);
+	color: rgb(55, 55, 55);
 }
 
 hr {
