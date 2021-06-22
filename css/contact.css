@@ -16,6 +16,7 @@
 .contact-div h3 {
 	text-align: start;
 	font-size: 24px;
+    cursor: pointer;
 }
 
 .contact-div a {
