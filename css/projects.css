@@ -3,23 +3,26 @@
 	justify-content: center;
 }
 
-@media screen and (max-width: 1150px) {
-	.projects-div {
-		flex-direction: column;
-	}
-}
-
 .projects-wrapper {
-	padding-bottom: 10vh;
+    padding-bottom: 10vh;
 	padding-top: 10px;
 }
 
 .projects {
-	max-width: 15vh;
-	padding: 10px;
+    max-width: 15vh;
 	background: rgba(177, 177, 177, 0.6);
 	border: none;
 	height: fit-content;
+    margin: 1vw;
+}
+
+@media screen and (max-width: 1150px) {
+    .projects-div {
+        flex-direction: column;
+    }
+    .projects {
+        margin: 1vh auto;
+    }
 }
 
 .projects img {
