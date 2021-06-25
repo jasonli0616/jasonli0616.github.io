@@ -18,8 +18,27 @@ def index():
         subject = request.form['subject']
         message = request.form['message']
 
+        # Validation (not empty)
+        sendEmail = True
+        for i in [name, email, subject, message]:
+            if i.strip() == '':
+                sendEmail = False
+
         # Send email
         try:
+            if name == '':
+                jsAlertMsg = 'Please enter your name.'
+                raise Exception
+            elif email == '':
+                jsAlertMsg = 'Please enter your email address.'
+                raise Exception
+            elif subject == '':
+                jsAlertMsg = 'Please enter an email subject line.'
+                raise Exception
+            elif message == '':
+                jsAlertMsg = 'Please enter your message.'
+                raise Exception
+
             with smtplib.SMTP('smtp-mail.outlook.com', 587) as smtp:
                 smtp.starttls()
                 fromEmail = os.getenv('EMAIL_ADDR')
@@ -31,7 +50,8 @@ def index():
             
             jsAlertMsg = 'Message sent!'
         except:
-            jsAlertMsg = 'An error occurred. Please try again.'
+            if jsAlertMsg is None:
+                jsAlertMsg = 'An error occurred. Please try again.'
 
     return render_template('index.html', jsAlertMsg=jsAlertMsg)
 
