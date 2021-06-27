@@ -42,7 +42,12 @@
 }
 
 .projects p a {
-	color: rgb(0, 221, 221);
+	color: aqua;
+    text-decoration: none;
+}
+
+.projects p a:hover {
+    text-decoration: underline;
 }
 
 .projects .btn {

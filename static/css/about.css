@@ -12,7 +12,12 @@
 }
 
 .about a {
-	color: rgb(0, 221, 221);
+	color: aqua;
+    text-decoration: none;
+}
+
+.about a:hover {
+    text-decoration: underline;
 }
 
 .lang-list {
