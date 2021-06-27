@@ -20,51 +20,53 @@
 
     <noscript>This website requires JavaScript</noscript>
 
-    <div class="intro-card" id="intro"
+    <div
         data-aos="zoom-out"
         data-aos-delay="200"
         data-aos-duration="1000"
     >
-        <img src="{{ url_for('static', filename='files/jl_logo.png') }}" alt="" class="logo"
-            data-aos="fade-down"
-            data-aos-delay="700"
-        >
-        <h1
-            data-aos="fade-down"
-            data-aos-delay="900"
-        >Jason Li</h1>
-        <h2
-            data-aos="fade-down"
-            data-aos-delay="1100"
-        >High school student</h2>
+        <div class="intro-card" id="intro">
+            <img src="{{ url_for('static', filename='files/jl_logo.png') }}" alt="" class="logo"
+                data-aos="fade-down"
+                data-aos-delay="700"
+            >
+            <h1
+                data-aos="fade-down"
+                data-aos-delay="900"
+            >Jason Li</h1>
+            <h2
+                data-aos="fade-down"
+                data-aos-delay="1100"
+            >High school student</h2>
 
-        <!-- Buttons -->
-        <div class="intro-btns"
-            data-aos="fade-up"
-            data-aos-delay="1300"
-        >
-            <div style="display: flex; justify-content: center;">
-                <a onclick="scrollToSection('about')" class="btn">About me</a>
-                <a onclick="scrollToSection('projects')" class="btn">Projects</a>
+            <!-- Buttons -->
+            <div class="intro-btns"
+                data-aos="fade-up"
+                data-aos-delay="1300"
+            >
+                <div style="display: flex; justify-content: center;">
+                    <a onclick="scrollToSection('about')" class="btn">About me</a>
+                    <a onclick="scrollToSection('projects')" class="btn">Projects</a>
+                </div>
+                <br>
             </div>
-            <br>
-        </div>
-        
-        <!-- Icons -->
-        <div class="icons">
-            <!-- GitHub -->
-            <a href="https://github.com/jasonli0616" target="_blank" data-aos="fade-up-right" data-aos-delay="1500"><i class="bi bi-github"></i></a>
-            <!-- Email -->
-            <a onclick="scrollToSection('contact')" data-aos="fade-up-left" data-aos-delay="1700"><i class="bi bi-envelope"></i></a>
+            
+            <!-- Icons -->
+            <div class="icons">
+                <!-- GitHub -->
+                <a href="https://github.com/jasonli0616" target="_blank" data-aos="fade-up-right" data-aos-delay="1500"><i class="bi bi-github"></i></a>
+                <!-- Email -->
+                <a onclick="scrollToSection('contact')" data-aos="fade-up-left" data-aos-delay="1700"><i class="bi bi-envelope"></i></a>
+            </div>
         </div>
     </div>
 
-    <div id="about">
-        <div class="intro-card about"
-            data-aos="flip-up"
-            data-aos-duration="700"
-            data-aos-anchor-placement="top-center"
-        >
+    <div id="about"
+        data-aos="flip-up"
+        data-aos-duration="700"
+        data-aos-anchor-placement="top-center"
+    >
+        <div class="intro-card about">
             <h1>About me</h1>
             <p>
                 I am a high school student in Canada. I am fluent in Python and Node.js (JavaScript), and I am currently learning Java and the <a href="https://docs.wpilib.org/en/stable/" target="_blank">WPILib library</a> for the <a href="https://en.wikipedia.org/wiki/FIRST_Robotics_Competition" target="_blank">FRC Robotics</a> team at my school. I use Flask to create web apps (check out AnonPost in my projects section).  I have participated in the <a href="https://dmz.ryerson.ca/canhack/" target="_blank">CanHack hackathon</a> run by Ryerson University and Carnegie Mellon University, earning a <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank">Cybersecurity award badge</a>. I am planning to participate in more Hackathons over the summer, as well as other programming competitions with a club at my school.
@@ -231,12 +233,12 @@
         </div>
     </div>
 
-    <div class="contact-div" id="contact">
-        </a>
-        <form action="" method="POST"
-            data-aos="zoom-in"
-            data-aos-duration="800"
-        >
+    <div class="contact-div" id="contact"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+    >
+        <form action="" method="POST">
             <h1>Contact</h1>
 
             <label for="name">Name</label>
