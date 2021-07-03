@@ -61,21 +61,27 @@
         </div>
     </div>
 
-    <div id="about"
+    <div id="about"></div> <!-- This div is so the about button scrolls to the right position -->
+    <div
         data-aos="flip-up"
         data-aos-duration="700"
         data-aos-anchor-placement="top-center"
     >
         <div class="intro-card about">
-            <h1>About me</h1>
+            <h1 id="about">About me</h1>
             <p>
                 I am a high school student in Canada. I am fluent in Python and Node.js (JavaScript), and I am currently learning Java and the <a href="https://docs.wpilib.org/en/stable/" target="_blank">WPILib library</a> for the <a href="https://en.wikipedia.org/wiki/FIRST_Robotics_Competition" target="_blank">FRC Robotics</a> team at my school. I use Flask to create web apps (check out AnonPost in my projects section).  I have participated in the <a href="https://dmz.ryerson.ca/canhack/" target="_blank">CanHack hackathon</a> run by Ryerson University and Carnegie Mellon University, earning a <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank">Cybersecurity award badge</a>. I am planning to participate in more Hackathons over the summer, as well as other programming competitions with a club at my school.
             </p>
 
             <br>
-            <a href="https://github.com/jasonli0616" target="_blank" style="display: block; margin: auto;">
-                <img src="https://github-readme-stats.vercel.app/api?username=jasonli0616&theme=dark&show_icons=true" alt="" style="max-width: 90vw;">
-            </a>
+            <div class="about-badge">
+                <a href="https://github.com/jasonli0616" target="_blank">
+                    <img src="https://github-readme-stats.vercel.app/api?username=jasonli0616&theme=dark&show_icons=true">
+                </a>
+                <a href="https://ca.badgr.com/public/assertions/Gb5NH-I3QA6Z9aD8RX35qA" target="_blank">
+                    <img src="https://media.ca.badgr.com/uploads/badges/assertion-Gb5NH-I3QA6Z9aD8RX35qA.png" alt="">
+                </a>
+            </div>
 
             <h2 style="margin-bottom: 35px;">Languages and Technologies</h2>
             <ul class="lang-list">

@@ -20,6 +20,29 @@
     text-decoration: underline;
 }
 
+.about .about-badge {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+    .about .about-badge {
+        flex-direction: column;
+    }
+}
+
+.about .about-badge img {
+    height: 150px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    max-width: 90%;
+}
+
+.about .about-badge a {
+    vertical-align: middle;
+}
+
 .lang-list {
 	font-size: 20px;
 	margin-top: -30px;
