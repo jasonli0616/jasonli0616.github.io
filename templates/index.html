@@ -183,18 +183,35 @@
             </ul>
         </div>
     </div>
+    <h1 id="projects">My Projects</h1>
     <div class="projects-wrapper">
-        <h1 id="projects">My Projects</h1>
-        <div class="projects-div">
-            <div class="projects"
+        <div class="projects"
                 data-aos="zoom-out-up"
                 data-aos-delay="100"
+                data-aos-duration="700"
+            >
+                <h2>math.java</h2>
+                <img src="{{ url_for('static', filename='files/math_image.jpg') }}" alt=""
+                    data-aos="fade-down"
+                    data-aos-delay="200"
+                    data-aos-duration="700"
+                    style="border-radius: 7px; margin-bottom: 10px;"
+                >
+                <p>
+                    Math.java is a Math package in Java with a focus on vectors, trigonometry, and linear equations. It is made by me and 2 other people at my school, to learn Java for my school's robotics club.
+                </p>
+                <a href="https://github.com/Tripleteam88/math.java" target="_blank" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="projects"
+                data-aos="zoom-out-up"
+                data-aos-delay="300"
                 data-aos-duration="700"
             >
                 <h2>AnonPost</h2>
                 <img src="{{ url_for('static', filename='files/anonpost_screenshot.png') }}" alt=""
                     data-aos="fade-down"
-                    data-aos-delay="200"
+                    data-aos-delay="400"
                     data-aos-duration="700"
                 >
                 <p>
@@ -204,15 +221,16 @@
             </div>
 
             <div class="projects"
-            data-aos="zoom-out-up"
-            data-aos-delay="300"
-            data-aos-duration="700"
+                data-aos="zoom-out-up"
+                data-aos-delay="500"
+                data-aos-duration="700"
             >
                 <h2>PyInstaller GUI</h2>
                 <img src="{{ url_for('static', filename='files/pyinstallergui_screenshot.png') }}" alt=""
                     data-aos="fade-down"
-                    data-aos-delay="400"
+                    data-aos-delay="600"
                     data-aos-duration="700"
+                    style="max-height: 300px;"
                 >
                 <p>
                     This is a GUI version of <a href="https://www.pyinstaller.org" target="_blank">PyInstaller</a>. Compile your .py code into an .exe without having to use the command line.
@@ -221,9 +239,9 @@
             </div>
 
             <div class="projects"
-            data-aos="zoom-out-up"
-            data-aos-delay="500"
-            data-aos-duration="700"
+                data-aos="zoom-out-up"
+                data-aos-delay="700"
+                data-aos-duration="800"
             >
                 <h2>BSCode</h2>
                 <img src="{{ url_for('static', filename='files/bscode_screenshot.png') }}" alt=""
@@ -237,7 +255,6 @@
                 <a href="https://github.com/jasonli0616/BSCode" target="_blank" class="btn">View on GitHub</a>
             </div>
         </div>
-    </div>
 
     <div class="contact-div" id="contact"
         data-aos="fade-up"
