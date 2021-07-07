@@ -23,12 +23,7 @@
 .about .about-badge {
     display: flex;
     justify-content: center;
-}
-
-@media screen and (max-width: 850px) {
-    .about .about-badge {
-        flex-direction: column;
-    }
+    flex-wrap: wrap;
 }
 
 .about .about-badge img {
