@@ -14,6 +14,7 @@
 .about a {
 	color: aqua;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .about a:hover {
