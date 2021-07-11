@@ -1,16 +1,16 @@
 .contact-div {
-	padding: 10vh;
+    padding: 10vh;
     padding-top: 30px;
 }
 
 @media screen and (max-width: 600px) {
-	.contact-div {
-		padding: 5vh 3vw;
-	}
+    .contact-div {
+        padding: 5vh 3vw;
+    }
 }
 
 .contact-div h1 {
-	text-align: start;
+    text-align: start;
 }
 
 .contact-div form {

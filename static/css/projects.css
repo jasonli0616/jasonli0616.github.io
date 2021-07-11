@@ -1,21 +1,21 @@
 .projects-div {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .projects-wrapper {
     padding-bottom: 10vh;
-	padding-top: 10px;
+    padding-top: 10px;
     display: flex;
-	justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .projects {
     width: 50vw;
     max-width: 450px;
-	background: rgba(177, 177, 177, 0.6);
-	border: 1px solid black;
+    background: rgba(177, 177, 177, 0.6);
+    border: 1px solid black;
     margin: 1vw;
     border-radius: 20px;
     text-align: center;
@@ -35,7 +35,7 @@
 .projects img {
     display: block;
     margin: auto;
-	max-width: 90%;
+    max-width: 90%;
 }
 
 .projects p {
@@ -45,7 +45,7 @@
 }
 
 .projects p a {
-	color: aqua;
+    color: aqua;
     text-decoration: none;
 }
 
